@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Load general metadata into the site. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Charts</title>
+</head>
+
+<!-- Import our scripts. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+<!-- Prepare the navigation bar. -->
+<header>
+    <script src="/header.js" defer></script>
+    <main-header></main-header>
+</header>
+
+<!-- Prepare the main page. -->
+<main>
+    <section class="py-5 container">
+        <!-- To begin, all of our content at the top will be centered. -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Add a project name at the top of the page. -->
+                <header class="text-center mb-5">
+                    <h1 class="display-5">Project 1: Basic Charts</h1>
+
+                    <p></p>
+
+                    <p>
+                        For our initial project, I chose to utilize the ".nyc Domain Registrations by Zip Code"
+                        dataset, which provided statistics on how many ".nyc" domains were registered in each New York
+                        City zipcode as of October 7, 2025.
+                    </p>
+                    <p>
+                        The only processing I applied to the data itself was to combine values by borough instead of zip
+                        code. This means that the data refers to the amount of domains registered in Manhattan, Bronx,
+                        Queens, Brooklyn, or Staten Island rather than the amount registered in a given zipcode.
+                    </p>
+
+                    <!-- These have to be separate or they'll be merged into one block. -->
+                    <p></p>
+
+                    <a href="https://catalog.data.gov/dataset/nyc-domain-registrations-by-zip-code"
+                       target="_blank"
+                       rel="noopener"
+                       class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Link to dataset.</h5>
+                    </a>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-3">
+
+    <h4 class="justify-content-center text-center display-5">Charts</h4>
+
+    <section class="py-5 container">
+        <!-- Top row -->
+        <div class="row justify-content-center">
+            <!-- Left column -->
+            <div class="col-md-6 text-center">
+                <img
+                        src="Chart1.png"
+                        class="img-fluid shadow-sm"
+                        style="width: 100%;"
+                        alt="Initial Chart"
+                >
+                <p></p>
+                <h5>Initial Chart</h5>
+                <p>
+                    This initial chart is a basic bar chart comparison of the data. It's incredibly easy to understand,
+                    but it is basic and doesn't allow for deep insight.
+                </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="col-md-6 text-center">
+                <img
+                        src="Chart2.png"
+                        class="img-fluid shadow-sm"
+                        style="width: 100%;"
+                        alt="Initial Chart"
+                >
+                <p></p>
+                <h5>Chart Revision 2</h5>
+                <p>
+                    This version of the chart includes more detail to allow for in-depth comparisons. The addition of
+                    grid lines makes it easier to compare bars, and numbers are labelled on the chart to clarify any
+                    uncertain comparisons.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Bottom Row -->
+        <div class="row justify-content-center">
+            <!-- Left column -->
+            <div class="col-md-6 text-center">
+                <img
+                        src="Chart3.png"
+                        class="img-fluid shadow-sm"
+                        style="width: 100%;"
+                        alt="Initial Chart"
+                >
+                <p></p>
+                <h5>Chart Revision 3</h5>
+                <p>
+                    I decided to try a different type of comparison altogether - a donut chart. This allows for really
+                    intuitive comparisons with nearly complete data preservation while keeping the chart visually
+                    interesting. I find that the varying colors helps keep my attention, and the hole in the middle
+                    makes it so my eyes go around the circle.
+                </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="col-md-6 text-center">
+                <img
+                        src="Chart4.png"
+                        class="img-fluid shadow-sm"
+                        style="width: 100%;"
+                        alt="Initial Chart"
+                >
+                <p></p>
+                <h5>Chart Revision 4</h5>
+                <p>
+                    For my last chart, I wanted to try something a little more unique. This chart moves the slice for
+                    the Bronx away from the rest of the chart to emphasize it. This chart could be used to highlight
+                    the specific data from the Bronx, like, for example, how it makes up around 3% of domains despite
+                    making up around 15% of the city's population.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+</html>
