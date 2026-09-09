@@ -16,14 +16,14 @@ class MainHeader extends HTMLElement {
                         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                             <!-- Add the link to the home page. -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                <a class="nav-link active" aria-current="page" href="/dsc402/">Home</a>
                             </li>
 
                             <!-- Add the visualizations drop down. -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle" href="#" id="visualizations" data-bs-toggle="dropdown" aria-expanded="false">Visualizations</a>
                                 <ul class="dropdown-menu" aria-labelledby="visualizations">
-                                    <li><a class="dropdown-item" href="/visualizations/basiccharts">1. Basic Chart</a></li>
+                                    <li><a class="dropdown-item" href="/dsc402/visualizations/basiccharts">1. Basic Chart</a></li>
                                 </ul>
                             </li>
 
