@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "domain": false,
+      "grid": true,
+      "gridOpacity": 0.25
+    },
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300,
+      "strokeWidth": 0
+    }
+  },
+  "data": {
+    "name": "data-8dfdfc412a652aed9352b894fa1dbc54"
+  },
+  "datasets": {
+    "data-8dfdfc412a652aed9352b894fa1dbc54": [
+      {
+        "Age at Immigration": 0,
+        "From": "Combined",
+        "Net Societal Contribution": -179.0
+      },
+      {
+        "Age at Immigration": 0,
+        "From": "Western",
+        "Net Societal Contribution": -69.0
+      },
+      {
+        "Age at Immigration": 0,
+        "From": "Non-western",
+        "Net Societal Contribution": -266.0
+      },
+      {
+        "Age at Immigration": 0,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": -49.0
+      },
+      {
+        "Age at Immigration": 10,
+        "From": "Combined",
+        "Net Societal Contribution": -160.0
+      },
+      {
+        "Age at Immigration": 10,
+        "From": "Western",
+        "Net Societal Contribution": -37.0
+      },
+      {
+        "Age at Immigration": 10,
+        "From": "Non-western",
+        "Net Societal Contribution": -257.0
+      },
+      {
+        "Age at Immigration": 10,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": 0.0
+      },
+      {
+        "Age at Immigration": 30,
+        "From": "Combined",
+        "Net Societal Contribution": -37.0
+      },
+      {
+        "Age at Immigration": 30,
+        "From": "Western",
+        "Net Societal Contribution": 83.0
+      },
+      {
+        "Age at Immigration": 30,
+        "From": "Non-western",
+        "Net Societal Contribution": -125.0
+      },
+      {
+        "Age at Immigration": 30,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": 153.0
+      },
+      {
+        "Age at Immigration": 50,
+        "From": "Combined",
+        "Net Societal Contribution": -95.0
+      },
+      {
+        "Age at Immigration": 50,
+        "From": "Western",
+        "Net Societal Contribution": 7.0
+      },
+      {
+        "Age at Immigration": 50,
+        "From": "Non-western",
+        "Net Societal Contribution": -174.0
+      },
+      {
+        "Age at Immigration": 50,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": 48.0
+      },
+      {
+        "Age at Immigration": 70,
+        "From": "Combined",
+        "Net Societal Contribution": -190.0
+      },
+      {
+        "Age at Immigration": 70,
+        "From": "Western",
+        "Net Societal Contribution": -154.0
+      },
+      {
+        "Age at Immigration": 70,
+        "From": "Non-western",
+        "Net Societal Contribution": -236.0
+      },
+      {
+        "Age at Immigration": 70,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": -148.0
+      },
+      {
+        "Age at Immigration": 90,
+        "From": "Combined",
+        "Net Societal Contribution": -149.0
+      },
+      {
+        "Age at Immigration": 90,
+        "From": "Western",
+        "Net Societal Contribution": -145.0
+      },
+      {
+        "Age at Immigration": 90,
+        "From": "Non-western",
+        "Net Societal Contribution": -161.0
+      },
+      {
+        "Age at Immigration": 90,
+        "From": "Native Dutch Remigrant",
+        "Net Societal Contribution": -149.0
+      }
+    ]
+  },
+  "height": 400,
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "From",
+          "legend": {
+            "orient": "bottom"
+          },
+          "title": "Region of Origin",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "From",
+            "title": "Origin",
+            "type": "nominal"
+          },
+          {
+            "field": "Age at Immigration",
+            "title": "Age",
+            "type": "ordinal"
+          },
+          {
+            "field": "Net Societal Contribution",
+            "format": ",.0f",
+            "title": "Contribution",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": 0
+          },
+          "field": "Age at Immigration",
+          "title": "Age at Immigration",
+          "type": "ordinal"
+        },
+        "xOffset": {
+          "field": "From",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Net Societal Contribution",
+          "scale": {
+            "zero": true
+          },
+          "title": "Net Lifetime Societal Contribution (thousands of €)",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "type": "bar"
+      }
+    },
+    {
+      "encoding": {
+        "text": {
+          "field": "Net Societal Contribution",
+          "format": ",.0f",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Age at Immigration",
+          "type": "ordinal"
+        },
+        "xOffset": {
+          "field": "From",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Net Societal Contribution",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "dy": {
+          "expr": "datum['Net Societal Contribution'] >= 0 ? -8 : 12"
+        },
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "type": "text"
+      }
+    }
+  ],
+  "title": {
+    "anchor": "start",
+    "subtitle": "Source: IZA #17569",
+    "text": "Net Lifetime Societal Contribution of Immigrants by Age and Origin in the Netherlands"
+  },
+  "width": 650
+}

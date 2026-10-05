@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Load general metadata into the site. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fixing a Problematic Visualization</title>
+</head>
+
+<!-- Import our formatting scripts. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/js/bootstrap.min.js"></script>
+
+<!-- Vega Scripts. -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+<!-- Vega CSS -->
+<style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+
+    #vis2.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis2.vega-embed details,
+    #vis2.vega-embed details summary {
+      position: relative;
+    }
+
+    #vis3.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis3.vega-embed details,
+    #vis3.vega-embed details summary {
+      position: relative;
+    }
+
+    #vis4.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis4.vega-embed details,
+    #vis4.vega-embed details summary {
+      position: relative;
+    }
+</style>
+
+<!-- Prepare the navigation bar. -->
+<header>
+    <script src="/dsc402/header.js" defer></script>
+    <main-header></main-header>
+</header>
+
+<!-- Prepare the main page. -->
+<main>
+    <section class="py-5 container">
+        <!-- To begin, all of our content at the top will be centered. -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Add a project name at the top of the page. -->
+                <header class="mb-5">
+                    <h1 class="text-center display-5">Project 2: Fixing a Problematic Visualization</h1>
+
+                    <p></p>
+
+                    <p class="text-center">
+                        For this assignment, I chose to work on fixing a visualization created by President Donald J.
+                        Trump.
+                    </p>
+                    <p class="text-center">Issues with the original:</p>
+                    <p>- It is portrayed as representing the U.S. when it actually refers to the Netherlands.</p>
+                    <p>- The values used in Trump's version are entirely made up. There is no matching data in the source.</p>
+                    <p>- Trump sorts entries by the length of a country's name rather than anything significant.</p>
+                    <p>- The source is badly cited.</p>
+                    <p>- It's just a tweet.</p>
+                    <p class="text-center">How did I go about fixing it:</p>
+                    <p>
+                        Firstly, I had to track down the original dataset since it was incredibly badly cited. I read
+                        through the entire research paper because a simple ctrl+f couldn't find any of the numbers that
+                        he had used in his display, and I realized that every value was made up. As such, I essentially
+                        had to go about this by re-designing it from the ground-up with the real data.
+                    </p>
+                    <p>
+                        While reading the article, it did not take long at all to realize that the purpose of this
+                        research was not simply to see societal contribution by country of origin, but also by mean of
+                        entry (for example, asylum vs. typical immigration) or by age at which an individual immigrated.
+                        The article actually emphasized these as well, having very few numbers regarding societal
+                        contribution by country of origin while entire tables were made for the other modes tracked.
+                    </p>
+                    <p>
+                        In the end, I settled on building a data visualization merging the region of origin measure and
+                        the age of entry measure. I wasn't sure what sort of visualization would work well since there
+                        are 3 different axis's (region of origin (nominal), age of origin (nominal), and value (quantitative)),
+                        but eventually settled on a grouped bar chart. Groups are made by age group, and then region
+                        determines placement inside the group.
+                    </p>
+                    <p class="text-center">What did my visualization improve:</p>
+                    <p>- The values used are now real.</p>
+                    <p>- It does not mis-contextualize the original source.</p>
+                    <p>- It is sorted logically.</p>
+                    <p>- It's an actual chart!</p>
+
+                    <!-- These have to be separate or they'll be merged into one block. -->
+                    <p></p>
+
+                    <a href="https://www.reddit.com/r/dataisugly/comments/1t5wgqt/the_best_way_to_organize_data_like_this_by/"
+                       target="_blank"
+                       rel="noopener"
+                       class="list-group-item list-group-item-action text-center">
+                        <h5 class="mb-1">Link to original data visualization.</h5>
+                    </a>
+                    <a href="https://www.iza.org/publications/dp/17569/the-long-term-fiscal-impact-of-immigrants-in-the-netherlands-differentiated-by-motive-source-region-and-generation"
+                       target="_blank"
+                       rel="noopener"
+                       class="list-group-item list-group-item-action text-center">
+                        <h5 class="mb-1">Link to original paper.</h5>
+                    </a>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-3">
+
+    <h4 class="justify-content-center text-center display-5">Charts</h4>
+
+    <section class="py-5 container">
+        <!-- Top row -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img
+                        src="djt.webp"
+                        class="img-fluid shadow-sm"
+                        style="width: 80%;"
+                        alt="Noah Lutz Photo"
+                >
+
+                <p></p>
+                <h5>Original</h5>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div id="vis"></div>
+                <script>
+                    vegaEmbed("#vis", "chart.vl.json");
+                </script>
+                <p></p>
+                <h5>Improved Chart</h5>
+            </div>
+        </div>
+    </section>
+</main>
+</html>
