@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Load general metadata into the site. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liar Liar: Misleading Visualizations</title>
+</head>
+
+<!-- Import our formatting scripts. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+<!-- Prepare the navigation bar. -->
+<header>
+    <script src="/dsc402/header.js" defer></script>
+    <main-header></main-header>
+</header>
+
+<!-- Prepare the main page. -->
+<main>
+    <section class="py-5 container">
+        <!-- To begin, all of our content at the top will be centered. -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Add a project name at the top of the page. -->
+                <header class="mb-5">
+                    <h1 class="text-center display-5">Project 3: Liar Liar</h1>
+
+                    <p></p>
+
+                    <p class="text-center">
+                        For this assignment, I chose to work with political approval data for a U.S. president. I'll
+                        note that I have chosen to use data for a U.S. president who hasn't served in nearly 20 years
+                        to try to avoid creating anything that could be used for spreading misinformation - President
+                        George W. Bush.
+                    </p>
+
+                    <h3 class="text-center">
+                        How easy/hard is misleading people with visualizations?
+                    </h3>
+
+                    <p class="text-center">
+                        It is so incredibly easy to create misleading displays, it was actually shocking. To create the
+                        display I did, I didn't have to alter the data or really mess with graph settings at all. It
+                        truly just took a small filter on the X-axis and Y-axis to abuse the data into showing whatever
+                        I wanted to. I'm sure there are much more complicated ways that this could be done as well that
+                        would be harder to figure out, but this is effective in my mind and incredibly simple.
+                    </p>
+
+                    <h3 class="text-center">
+                        How can readers avoid being misled?
+                    </h3>
+
+                    <p class="text-center">
+                        Spend a little bit of time to read the graph and all of its different elements carefully. If the
+                        graph is showcasing certain years, question why those specific years are being used. If the
+                        Y-axis ends at certain numbers, try to imagine how it would look like with different ones and
+                        why those numbers may have been chosen. Lastly, verify what the data actually covers. My charts,
+                        for example, don't cover political approval - they cover Democratic political approval.
+                        Republican and Independent charts look way different, and this could tell a different story.
+                    </p>
+
+                    <!-- These have to be separate or they'll be merged into one block. -->
+                    <p></p>
+
+                    <a href="https://news.gallup.com/poll/116500/presidential-approval-ratings-george-bush.aspx"
+                       target="_blank"
+                       rel="noopener"
+                       class="list-group-item list-group-item-action text-center">
+                        <h5 class="mb-1">Original data provided by Gallup.</h5>
+                    </a>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-3">
+
+    <h4 class="justify-content-center text-center display-5">Charts</h4>
+
+    <section class="py-5 container">
+        <!-- Top row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class='tableauPlaceholder' id='viz1792983900793' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PoliticalApprovalofGWB&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='PoliticalApprovalofGWB&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PoliticalApprovalofGWB&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1792983900793');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if ( divElement.offsetWidth > 800 ) {
+                        vizElement.style.width='1000px';
+                        vizElement.style.height='827px';
+                    } else if ( divElement.offsetWidth > 500 ) {
+                        vizElement.style.width='1000px';
+                        vizElement.style.height='827px';
+                    } else {
+                        vizElement.style.width='100%';
+                        vizElement.style.height='727px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+
+                <p></p>
+                <h5 class="text-center">Genuine Graph</h5>
+                <p class="text-center">
+                    This graph is an honest representation of the approval rating of President George W. Bush by
+                    Democrats during his presidency. It represents both of his terms and generally has data polled
+                    every 2 weeks.
+                </p>
+                <p class="text-center">
+                    I tried to represent all data as honestly as I could. For example, the Y-axis data is percentages,
+                    so the graph shows all data points with the limits set to 0 and 100. The X-axis represents time
+                    during his presidency, so it has all collected data points within his presidency. Altogether, I
+                    tried to make it fair and honest.
+                </p>
+                <p class="text-center">
+                    Generally, it shows that his approval rating started somewhat low and it went even lower.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <section class="py-5 container">
+            <!-- Top row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class='tableauPlaceholder' id='viz1792984515886' style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MisleadingPoliticalApprovalofGWB&#47;Dashboard2&#47;1_rss.png' style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='MisleadingPoliticalApprovalofGWB&#47;Dashboard2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MisleadingPoliticalApprovalofGWB&#47;Dashboard2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1792984515886');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if ( divElement.offsetWidth > 800 ) {
+                            vizElement.style.width='1000px';
+                            vizElement.style.height='827px';
+                        } else if ( divElement.offsetWidth > 500 ) {
+                            vizElement.style.width='1000px';
+                            vizElement.style.height='827px';
+                        } else {
+                            vizElement.style.width='100%';
+                            vizElement.style.height='727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+
+                    <p></p>
+                    <h5 class="text-center">Misleading Graph</h5>
+                    <p class="text-center">
+                        This graph is a misleading representation of the approval rating of President George W. Bush by
+                        Democrats during his presidency. It focuses specifically on post-9/11 and alters scales to try
+                        to make it appear like he experienced a significant decline.
+                    </p>
+                    <p class="text-center">
+                        While looking at the original data, I noticed that there was a huge spike in support following
+                        9/11. I noticed that starting the graph here would make his approval decline appear much more
+                        significant than it would otherwise. As such, this graph starts at President Bush's approval
+                        peak after 9/11, and follows until his low at the end of his presidency. It also has the Y-axis
+                        scale adjusted to try to fit the line as perfectly within the chart as possible. This makes the
+                        changes look even more extreme than they are. This features cherrypicking and scale alterations.
+                    </p>
+                    <p class="text-center">
+                        It appears to show that his approval rating started extremely high and that it plummeted
+                        throughout his presidency.
+                    </p>
+                </div>
+            </div>
+    </section>
+</main>
+</html>

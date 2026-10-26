@@ -25,6 +25,7 @@ class MainHeader extends HTMLElement {
                                 <ul class="dropdown-menu" aria-labelledby="visualizations">
                                     <li><a class="dropdown-item" href="/dsc402/visualizations/basiccharts">1. Basic Chart</a></li>
                                     <li><a class="dropdown-item" href="/dsc402/visualizations/problematicvis">2. Problematic Visualization</a></li>
+                                    <li><a class="dropdown-item" href="/dsc402/visualizations/liarliar">3. Liar Liar</a></li>
                                 </ul>
                             </li>
 
